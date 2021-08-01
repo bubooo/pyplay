@@ -1,3 +1,4 @@
 # pyplay
-repo for playing with pyhon for networkers
-<b> Use only if you really require use shit
+repo for playing with pyhon for networkers.
+
+<b>Using at your own risk
