@@ -21,10 +21,13 @@ routers = [
     "device_type": "cisco_nxos"
 }
 ]
+id = 0
 
 #Define CONSTATS
 
 if __name__ == "__main__":
     for router_item in routers:
+        id += 1
         router_session = ConnectHandler(**router_item)
-        print("This is router with hostname {}".format(router_session.find_prompt()))
+        print("{}. router with hostname:\t {}".format(id, router_session.find_prompt()))
+        router_session.disconnect()
