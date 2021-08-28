@@ -1,7 +1,12 @@
 Value PORT_NAME (^\S+)
 
 Start
- ^\s*${PORT_NAME}
+ ^Port -> Interfaces
+
+Interfaces
+ ^\s*${PORT_NAME} -> Record
+
+EOF
 
 
 
