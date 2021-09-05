@@ -1,10 +1,11 @@
 Value MAC_ADDRESS (([0-9a-f]{2}:){5}[0-9a-f]{2})
-Value IP_ADDRESS (\d{1-3}.\d{1-3}.\d{1-3}.\d{1-3})
+Value IP_ADDRESS (\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})
 Value NAME (\S+)
 Value VLAN (\S+)
 
 Start
  ^MAC Address -> ARP_table
+
 ARP_table
  ^${MAC_ADDRESS}\s+${IP_ADDRESS}\s+${NAME}\s+${VLAN}\s+ -> Record
 
